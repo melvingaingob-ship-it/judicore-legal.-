@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #0A1931;
+    background-color: #F8FAFC;
+  }
+  
+  .font-serif {
+    font-family: 'EB Garamond', Georgia, Cambria, serif;
+  }
+
+  .font-crest {
+    font-family: 'Cinzel', Georgia, serif;
+  }
+}
+
+/* Subtle clean scrollbars for light mode */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Court Audio Transcript Synchronized Line Styling */
+.transcript-line {
+  padding: 8px 12px;
+  margin: 4px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  border-left: 4px solid transparent;
+}
+
+.transcript-line:hover {
+  background-color: #f1f5f9;
+}
+
+.speaker-tag {
+  font-weight: 700;
+  color: #2b579a;
+  margin-right: 8px;
+}
+
+.timestamp-tag {
+  color: #64748b;
+  font-size: 0.85em;
+  font-family: 'JetBrains Mono', monospace;
+  margin-right: 10px;
+}
+
+/* The active highlight state */
+.active-highlight,
+.active-row-highlight {
+  background-color: #fff3cd !important;
+  border-left: 4px solid #ffc107 !important;
+  box-shadow: 0 1px 4px rgba(245, 158, 11, 0.15);
+  font-weight: 500;
+}
+
+.normal-row {
+  background-color: transparent;
+  border-left: 4px solid transparent;
+}
+
+

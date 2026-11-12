@@ -1,0 +1,10 @@
+{
+  "name": "Remix Remix Remix  JudiCore | Legal Transcription Platform- final",
+  "description": "Secure legal court transcription platform with automated Admin Center request workflow, human verification, stream-only audio access, and exportable watermarked transcripts.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
